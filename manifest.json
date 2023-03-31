@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Captivea Odoo Tools",
+  "description": "Automatically adds the '?debug=assets' parameter to the URL of ERP Odoo",
+  "version": "1.0",
+
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png"
+  },
+
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [{
+    "exclude_matches": ["*://*/web/database/selector*"],
+    "matches": ["*://*/web/*"],
+    "js": ["content_script.js"],
+    "run_at": "document_start"
+  }]
+}

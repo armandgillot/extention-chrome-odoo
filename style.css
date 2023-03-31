@@ -1,0 +1,61 @@
+body {
+    font-family: sans-serif;
+    background-color: #f5f5f5;
+    margin: 50px;
+/* margin-left: 12px; */
+  }
+ #container{
+    display: flex;
+
+  }
+  div{
+    margin: 20px;
+  }
+  .captiveaLogo{
+    margin: 20px;
+  }
+
+  button {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0088cc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #005580;
+  }
+
+  button:active {
+    background-color: #003f6b;
+  }
+
+  #enable {
+    background-color: #5cb85c;
+  }
+
+  #enable:hover {
+    background-color: #449d44;
+  }
+
+  #enable:active {
+    background-color: #398439;
+  }
+
+  #disable {
+    background-color: #d9534f;
+  }
+
+  #disable:hover {
+    background-color: #c9302c;
+  }
+
+  #disable:active {
+    background-color: #ac2925;
+  }
