@@ -9,6 +9,10 @@ a{
   color: #d9534f;
 }
 
+.description {
+  text-align: center;
+}
+
 .activate {
   display: flex;
   flex-direction: row;
