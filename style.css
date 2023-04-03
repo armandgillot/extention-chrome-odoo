@@ -1,18 +1,28 @@
 body {
     font-family: sans-serif;
-    background-color: #f5f5f5;
-    margin: 50px;
-/* margin-left: 12px; */
+    background-color: #202124;
+    color: white;
+    margin:10px;
   }
+
+a{
+  color: #d9534f;
+}
+
+.activate {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.dbgroup {
+  margin-bottom: 20px;
+}
+
  #container{
     display: flex;
-
-  }
-  div{
-    margin: 20px;
-  }
-  .captiveaLogo{
-    margin: 20px;
+    flex-direction: column;
+    align-items: center;
   }
 
   button {
@@ -28,6 +38,11 @@ body {
     cursor: pointer;
   }
 
+  button:disabled{
+  opacity: 50%;
+  cursor:initial;
+}
+
   button:hover {
     background-color: #005580;
   }
@@ -38,6 +53,8 @@ body {
 
   #enable {
     background-color: #5cb85c;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
 
   #enable:hover {
@@ -50,6 +67,8 @@ body {
 
   #disable {
     background-color: #d9534f;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
   }
 
   #disable:hover {

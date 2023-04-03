@@ -39,32 +39,20 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // ICI fonction désactivation ou activation ---------------------
+
 function onClickedEnable() {
-  chrome.storage.local.set({ enabled: true }, function () {
-    chrome.tabs.reload({ bypassCache: true });
-    console.log("Enabled");
-    location.reload();
-  });
+  chrome.storage.local.set({ enabled: true });
+  chrome.tabs.reload({ bypassCache: true });
+  location.reload();
+  console.log("Enabled");
 }
 
 function onClickedDisable() {
   chrome.storage.local.set({ enabled: false }, function () {
-    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-      const currentUrl = tabs[0].url;
-
-      if (currentUrl.includes("debug=assets")) {
-        const newUrl = currentUrl.replace(/[\?|&]debug=assets/g, "/?debug=0");
-        chrome.tabs.update({ url: newUrl });
-      }
-
-      chrome.tabs.executeScript({
-        code: "window.location.reload();",
-      });
-    });
-
+    chrome.tabs.query({ active: true, currentWindow: true });
     chrome.tabs.reload({ bypassCache: true });
-    console.log("Disabled");
     location.reload();
+    console.log("Disabled");
   });
 }
 
