@@ -38,8 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .addEventListener("click", onClickedManager);
 });
 
-// ICI fonction désactivation ou activation ---------------------
-
+// Activer/Desactiver mode debug
 function onClickedEnable() {
   chrome.storage.local.set({ enabled: true });
   chrome.tabs.reload({ bypassCache: true });
