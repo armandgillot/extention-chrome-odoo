@@ -7,6 +7,7 @@ Permet d'activer le mode debug automatiquement sur l'ERP Odoo
 N'est pas encore sur le chrome web store donc ajouter manuellement l'extension pour moment :
 
 ```bash
+  Désactivez le singe Odoo Debug
   Download zip
   Extraire zip dans un dossier
   Allez à chrome://extensions
@@ -24,5 +25,5 @@ N'est pas encore sur le chrome web store donc ajouter manuellement l'extension p
 Optimisations prévues :
 
 - Rafraichissement de page lors de l'activation/désactivation
-- Choisir debug=1 selon préférence
+- Choisir debug=1 ou debug=assets selon préférence
 - Ajout au chrome web store pour installation/maj facile
