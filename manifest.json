@@ -22,7 +22,7 @@
   },
 
   "content_scripts": [{
-    "exclude_matches": ["*://*/web/database/selector*"],
+    "exclude_matches": ["*://*/web/database/selector*", "*://*/web/login*"],
     "matches": ["*://*/web/*"],
     "js": ["content_script.js"],
     "run_at": "document_start"
