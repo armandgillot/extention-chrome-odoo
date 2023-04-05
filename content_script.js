@@ -6,7 +6,11 @@ function updateDebugMode(valueDebug) {
   const url =
     tabUrl.origin + tabUrl.pathname + `?${params.toString()}` + tabUrl.hash;
   console.log("new url : " + url);
-  location = url;
+
+  // Vérifier si la nouvelle URL est différente de l'URL actuelle
+  if (url !== location.href) {
+    location.href = url;
+  }
 }
 
 chrome.storage.local.get("enabled", function (result) {

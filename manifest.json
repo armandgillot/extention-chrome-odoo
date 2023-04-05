@@ -23,7 +23,7 @@
 
   "content_scripts": [{
     "exclude_matches": ["*://*/web/database/selector*", "*://*/web/login*"],
-    "matches": ["*://*/web/*"],
+    "matches": ["*://*/web/*", "*://*/web*"],
     "js": ["content_script.js"],
     "run_at": "document_start"
   }]
