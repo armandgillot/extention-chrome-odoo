@@ -24,4 +24,4 @@ N'est pas encore sur le chrome web store donc ajouter manuellement l'extension p
 Optimisations prévues :
 
 - Rafraichissement de page lors de l'activation/désactivation
-- Ajout au chrome web store
+- Ajout au chrome web store pour installation/maj facile
