@@ -11,7 +11,7 @@ N'est pas encore sur le chrome web store donc ajouter manuellement l'extension p
   Download zip
   Extraire zip dans un dossier
   Allez à chrome://extensions
-  Sur chrome "Charger l'extension non empactée"
+  Sur chrome "Charger l'extension non empaquetée"
   Choisir le dossier de l'extension
 ```
 
