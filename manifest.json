@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Captivea Odoo Tools",
   "description": "Automatically adds the '?debug=assets' parameter to the URL of ERP Odoo",
-  "version": "1.0",
+  "version": "1.1",
   "author": {
     "email": "armand.gillot@captivea.com"
   },
