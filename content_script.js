@@ -15,7 +15,7 @@ function updateDebugMode(valueDebug) {
 
 chrome.storage.local.get("enabled", function (result) {
   if (result.enabled !== false) {
-    updateDebugMode("assets");
+    updateDebugMode("1");
   } else {
     updateDebugMode("0");
   }
